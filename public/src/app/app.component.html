@@ -1,0 +1,20 @@
+<div id="all_content">
+  <h1 style="text-align:center">Restful Tasks API</h1>
+  <button (click)="getTasks()" id="btn_tasks">GET ALL TASKS</button>
+  <fieldset *ngIf="seeAll">
+    <legend>All Tasks</legend>
+    <table id="field_set_data">
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>View</th>
+      </tr>
+      <tr *ngFor="let task of tasks">
+        <td>{{task.title}}</td>
+        <td>{{task.description}}</td>
+        <td><button (click)="viewTask(task._id)" class="individ_btn">Show</button></td>
+      </tr>
+    </table>
+  </fieldset>
+</div>
+<app-task *ngIf="show_individ" [taskToShow]="showSingleInfo"></app-task>

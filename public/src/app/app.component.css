@@ -1,0 +1,24 @@
+#all_content{
+    /* vertical-align: center; */
+    border: 5px solid orange;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 200%;
+}
+
+#btn_tasks {
+    color: white;
+    background-color: purple;
+    font-size: 120%;
+}
+
+.individ_btn{
+    color: white;
+    background-color: teal;
+    border-radius: 50%;
+    padding: 20px;
+}
+#field_set_data{
+    border: 5px solid blue;
+    border-radius: 25px;
+}
